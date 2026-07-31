@@ -12,13 +12,11 @@ INSERT INTO Staff (FirstName, LastName, Phone, Email, Role, Salary) VALUES
 ('Reem', 'Al-Harbi', '0554445566', 'reem@clinic.com', 'Nurse', 8000.00),
 ('Amal', 'Al-Ghamdi', '0555556677', 'amal@clinic.com', 'Nurse', 7500.00);
 
--- 3. Populate Doctors
 INSERT INTO Doctors (StaffID, Specialization, LicenseNumber) VALUES
 (1, 'Cardiology', 'DOC1001'),
 (2, 'Pediatrics', 'DOC1002'),
 (3, 'Dermatology', 'DOC1003');
 
--- 4. Populate Nurses
 INSERT INTO Nurses (StaffID, ShiftType, Department) VALUES
 (4, 'Morning', 'Emergency'),
 (5, 'Night', 'Outpatient');
@@ -30,7 +28,6 @@ INSERT INTO Appointments (PatientID, StaffID, AppointmentDate, AppointmentTime, 
 (4, 1, '2026-08-02', '14:00:00', 'Scheduled'),
 (5, 2, '2026-08-03', '15:30:00', 'Cancelled');
 
--- 6. Populate Medical Records
 INSERT INTO Medical_Records (AppointmentID, Diagnosis, Notes, RecordDate) VALUES
 (1, 'Hypertension', 'Prescribed blood pressure medication.', '2026-08-01'),
 (2, 'Seasonal Allergy', 'Mild fever and congestion.', '2026-08-01'),
